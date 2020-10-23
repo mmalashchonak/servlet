@@ -1,15 +1,10 @@
-# Weather parser
+# Servlet CRUD 
 
-Console application for parsing weather in Minsk from www.intermeteo.com and storing it into Databases.
+JSP page to save, get, update and delete persons.
 
 ### To run:
 
 - ```mvn clean install```
-- ```MySQL and MongoDB servers required.```
-
-### Libraries used:
-
-- ```Jsoup```
-- ```Log4j2```
+- ```MySQL and Tomcat servers required.```
   
  
