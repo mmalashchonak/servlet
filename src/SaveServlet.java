@@ -18,7 +18,7 @@ public class SaveServlet extends javax.servlet.http.HttpServlet {
 
         MySQLDB.putIntoDB(person);
         out.print("<p>Record saved successfully!</p>");
-        request.getRequestDispatcher("index.jsp").include(request, response);
+        request.getRequestDispatcher("web/index.jsp").include(request, response);
         out.close();
     }
 }
