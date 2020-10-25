@@ -9,10 +9,10 @@
 <h1>Add New Person</h1>
 <form action="SaveServlet" method="post">
   <table>
-    <tr><td>Name:</td><td><input type="text" name="name"/></td></tr>
-    <tr><td>Password:</td><td><input type="password" name="password"/></td></tr>
+    <tr><td>Name:</td><td><input id="name" type="text" name="name"/></td></tr>
+    <tr><td>Password:</td><td><input id="password" type="password" name="password"/></td></tr>
     </td></tr>
-    <tr><td colspan="2"><input type="submit" value="Save Person"/></td></tr>
+    <tr><td colspan="2"><input id="save" type="submit" value="Save Person"/></td></tr>
   </table>
 </form>
 
