@@ -1,15 +1,7 @@
 import bo.Person;
-import db.DBFactory;
-import db.DBTypes;
-import db.impl.Database;
 import db.impl.MySQLDB;
 
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 

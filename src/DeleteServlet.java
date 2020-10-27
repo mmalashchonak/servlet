@@ -1,5 +1,3 @@
-import db.DBFactory;
-import db.DBTypes;
 import db.impl.MySQLDB;
 
 import java.io.IOException;

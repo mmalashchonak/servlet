@@ -1,6 +1,4 @@
 import bo.Person;
-import db.DBFactory;
-import db.DBTypes;
 import db.impl.MySQLDB;
 
 import java.io.IOException;
@@ -24,7 +22,7 @@ public class EditServlet extends HttpServlet {
 
         Person person = MySQLDB.getById(id);
 
-        out.print("<form action='EditServlet2' method='post'>");
+        out.print("<form action='PutServlet' method='post'>");
         out.print("<table>");
         out.print("<tr><td></td><td><input type='hidden' name='id' value='"+person.getId()+"'/></td></tr>");
         out.print("<tr><td>Name:</td><td><input type='text' name='name' value='"+person.getName()+"'/></td></tr>");

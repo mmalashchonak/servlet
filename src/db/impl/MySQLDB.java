@@ -14,48 +14,10 @@ import static java.sql.DriverManager.getConnection;
 
 public class MySQLDB {
 
-//    static {
-//        Properties prop = new Properties();
-//        InputStream input = null;
-//
-//        try {
-//            input = new FileInputStream("C:\\Users\\Dengi\\IdeaProjects\\untitled3\\config.properties");
-//            prop.load(input);
-//            userName = prop.getProperty("mysql_user");
-//            password = prop.getProperty("mysql_pass");
-//            connectionUrl = prop.getProperty("mysql_url");
-//        } catch (IOException ex) {
-//            ex.printStackTrace();
-//        } finally {
-//            if (input != null) {
-//                try {
-//                    input.close();
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }
-//    }
-//
-//    static {
-//        try {
-//            Class.forName("com.mysql.cj.jdbc.Driver");
-//            Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
-//            Statement statement = connection.createStatement();
-//            statement.executeUpdate("CREATE TABLE IF Not EXISTS Person " +
-//                    "(id MEDIUMINT NOT NULL AUTO_INCREMENT, " +
-//                    "NAME CHAR(20) NOT NULL, " +
-//                    "PASSWORD CHAR(30) NOT NULL, " +
-//                    "PRIMARY KEY (id))");
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
-
     public static Connection getConnect() {
         Connection connection = null;
         try {
-Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             connection = getConnection("jdbc:mysql://localhost:3306/weather_db?serverTimezone=Europe/Minsk", "root", "1234");
             Statement statement = connection.createStatement();
             statement.executeUpdate("CREATE TABLE IF Not EXISTS Person " +
@@ -152,5 +114,4 @@ Class.forName("com.mysql.cj.jdbc.Driver");
 
         }
     }
-
 }
